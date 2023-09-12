@@ -10,9 +10,10 @@ const RestuarantContainer = () => {
 
 
     return (
-        <div className="restuarant-container">
-            <button 
-                type="button" 
+        <>
+        <button 
+                type="button"
+                className="get-top-rated-btn"
                 onClick={() => {
                     const filteredList = listOfRestuarants.filter(restuarant => restuarant.data.avgRating >= 4)
                     setListOfRestuarants(filteredList);
@@ -20,10 +21,13 @@ const RestuarantContainer = () => {
             >
                 Get Top Rated Restuarants 
             </button>
+        <div className="restuarant-container">
+            
             {
                 listOfRestuarants.map(restuarantData => <RestuarantCard key={restuarantData.data.uuid} restuarantData={restuarantData}/>)
             }
         </div>
+        </>
     )
 }
 
