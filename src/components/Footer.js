@@ -12,7 +12,7 @@ const Footer = () => {
             <p>Inspired by <a target="_blank" href={SOURCE_1_URL}>NamasteDev.com</a> & <a target="_blank" href={SOURCE_2_URL}>NxtWave</a></p>
             </div>
             <div>
-                { SOCIAL_URL_LIST.map(socialUrlItem => <SocialLogo socialUrlItem={socialUrlItem} id={socialUrlItem.id}/>)}
+                { SOCIAL_URL_LIST.map(socialUrlItem => <SocialLogo socialUrlItem={socialUrlItem} key={socialUrlItem.id}/>)}
             </div>
         </div>
     )

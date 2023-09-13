@@ -1,6 +1,6 @@
 import RestuarantCard from "./RestuarantCard";
 import restuarantCardData from "../utils/mockData";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 
 const RestuarantContainer = () => {
@@ -8,6 +8,9 @@ const RestuarantContainer = () => {
     // Local State Variable --> Super Powerful Variable
     const [listOfRestuarants, setListOfRestuarants] = useState(restuarantCardData);
 
+    useEffect(() => {
+        console.log('useEffect Called')
+    }, [])
 
     return (
         <>
