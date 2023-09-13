@@ -1,13 +1,13 @@
 const restuarantCardData = [
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "416737",
         "name": "Kwality Walls Frozen Dessert and Ice Cream Shop",
         "uuid": "16ec8ab3-140a-4784-9795-e9c1b33d206b",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "1000+ ratings",
         "cloudinaryImageId": "kwsqoyiyjqtbqbnnsjlj",
         "cuisines": [
@@ -157,13 +157,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "211568",
         "name": "Biryani Hub",
         "uuid": "15949845-fe6b-482f-be88-74f5f5c366f5",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "500+ ratings",
         "cloudinaryImageId": "dpi5trnmwwewxk3t3n9m",
         "cuisines": [
@@ -306,13 +306,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "133224",
         "name": "Kinnera Restaurant",
         "uuid": "d91b4f5a-a3b2-4874-8d0f-493a93ee5f75",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "1000+ ratings",
         "cloudinaryImageId": "sg6qydb0hzaquy5vuo4o",
         "cuisines": [
@@ -418,13 +418,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "436080",
         "name": "Kritunga",
         "uuid": "6a4a57b6-1259-4461-af1c-0341f1e17f2b",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "500+ ratings",
         "cloudinaryImageId": "cahewztmmiyu8xr1ekyt",
         "cuisines": [
@@ -577,13 +577,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "548348",
         "name": "Velvet bakers and biryani",
         "uuid": "a6d87fd1-db77-46a8-ac52-e74febe7cc76",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "500+ ratings",
         "cloudinaryImageId": "b0azf7xmzcjcpeyenq7s",
         "cuisines": [
@@ -728,13 +728,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "555545",
         "name": "Oasis Spices",
         "uuid": "d7933b98-d83e-450a-be0c-869a3cfd0520",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "1000+ ratings",
         "cloudinaryImageId": "b4ce219adcb305f94ef8ad62e2f728be",
         "cuisines": [
@@ -883,13 +883,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "177788",
         "name": "Sri Sri Sri Hotel",
         "uuid": "9b1ccab1-fc7b-4e5d-937f-c1b3158b6d9a",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "1000+ ratings",
         "cloudinaryImageId": "kt8ircg6spo1dxawunfq",
         "cuisines": [
@@ -1002,13 +1002,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "531667",
         "name": "Thug lyf Restro Bar",
         "uuid": "1514c401-bb90-48ca-ab60-deddd2fcf255",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "100+ ratings",
         "cloudinaryImageId": "tyvvv5irbw5kx6rq6uto",
         "cuisines": [
@@ -1113,13 +1113,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "508890",
         "name": "NIC Ice Creams",
         "uuid": "8423487e-c53e-4e25-927c-e2165de70ed7",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "500+ ratings",
         "cloudinaryImageId": "91d6dda411b108965541c16ac1cfe2bc",
         "cuisines": [
@@ -1223,13 +1223,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "631616",
         "name": "Biryanis And More",
         "uuid": "142e6cd7-25ca-47f5-86c4-c1590dade136",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "100+ ratings",
         "cloudinaryImageId": "wtydnlgvjpxyq2ypcnyv",
         "cuisines": [
@@ -1380,13 +1380,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "129607",
         "name": "99 Biryani",
         "uuid": "30261ca3-2e78-4ce8-9684-5af50522f834",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "5000+ ratings",
         "cloudinaryImageId": "yd3jjoxbtw2ol5dhpr2o",
         "cuisines": [
@@ -1529,13 +1529,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "490865",
         "name": "T.G. Bawarchi Biryanis",
         "uuid": "48b6b4b9-9f0f-4827-a175-00acf4e3b2e2",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "100+ ratings",
         "cloudinaryImageId": "pxqdn1hnry9sjg2smwze",
         "cuisines": [
@@ -1679,13 +1679,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "671450",
         "name": "SPICY BAWARCHI",
         "uuid": "1fd179c4-17f7-40fe-8fd2-03d7c39962cc",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "20+ ratings",
         "cloudinaryImageId": "2bd275014179275d14981a289723f4f2",
         "cuisines": [
@@ -1834,13 +1834,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "128490",
         "name": "Lassi Shop Mamatha Road",
         "uuid": "b081a578-5047-4580-a539-05a58609d3c4",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "1000+ ratings",
         "cloudinaryImageId": "a8ncwxug0nozo9owwffi",
         "cuisines": [
@@ -1983,13 +1983,13 @@ const restuarantCardData = [
     },
     {
       "type": "restaurant",
-      "data": {
+      "info": {
         "type": "F",
         "id": "589165",
         "name": "Buddha fast food centre",
         "uuid": "ab2361e6-7652-4a8d-9170-d48d64dd28e2",
         "city": "174",
-        "area": "Lenin Nagar",
+        "areaName": "Lenin Nagar",
         "totalRatingsString": "20+ ratings",
         "cloudinaryImageId": "anfvzzozivctwnl4x9uu",
         "cuisines": [
