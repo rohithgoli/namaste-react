@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react';
 const RestuarantContainer = () => {
 
     // Local State Variable --> Super Powerful Variable
-    const [listOfRestuarants, setListOfRestuarants] = useState(restuarantCardData);
+    const [listOfRestuarants, setListOfRestuarants] = useState([]);
 
     useEffect(() => {
         fetchData();
@@ -15,14 +15,19 @@ const RestuarantContainer = () => {
     const fetchData = async () => {
         const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.2438426&lng=80.1733509&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
         const responseData = await response.json()
-        let restaurantListParentCards = responseData?.data?.cards
+        let uiParentCards = responseData?.data?.cards
         console.log(responseData)
-        let desiredParentCard = restaurantListParentCards[4]
-        console.log(desiredParentCard)
-        let restaurantList = desiredParentCard?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        let desiredParentCardList = uiParentCards.filter(parentCard => parentCard?.card?.card?.id === "restaurant_grid_listing")
+        console.log(desiredParentCardList)
+        let restaurantList = desiredParentCardList[0]?.card?.card?.gridElements?.infoWithStyle?.restaurants
         console.log(restaurantList)
-        setListOfRestuarants(restaurantList)    
-        
+        setListOfRestuarants(restaurantList)
+    }
+
+    if (listOfRestuarants.length == 0) {
+        return (
+            <h2>Loading....</h2>
+        )
     }
 
     return (
@@ -36,9 +41,8 @@ const RestuarantContainer = () => {
                 }}
             >
                 Get Top Rated Restuarants 
-            </button>
+        </button>
         <div className="restuarant-container">
-            
             {
                 listOfRestuarants.map(restuarantData => <RestuarantCard key={restuarantData.info.id} restuarantData={restuarantData}/>)
             }
