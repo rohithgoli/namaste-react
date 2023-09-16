@@ -167,3 +167,29 @@ body {
     width: 24px;
     margin-right: 10px;
 }
+
+.shimmer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 8px; 
+    width: 180px;
+    height: 270px;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+.shimmer-image-card {
+    width: 100%;
+    background-color: #ebe6e6;
+}
+
+.shimmer-title-card {
+    width: 70%;
+    background-color: #807b7a;
+}
+
+.shimmer-meta-data-card {
+    width: 90%;
+    background-color: #d9d3d2
+}
