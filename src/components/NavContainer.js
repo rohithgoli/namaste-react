@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 const NavContainer = () => {
 
@@ -6,8 +7,21 @@ const NavContainer = () => {
 
     return (
         <ul className="nav-container">
-            <li className="nav-item">Home</li>
-            <li className="nav-item">About</li>
+            <li>
+                <Link to="/" className="nav-item"> 
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link to="/about" className="nav-item">
+                    About
+                </Link>
+            </li>
+            <li>
+                <Link to="/contact" className="nav-item">
+                    Contact
+                </Link>
+            </li>
             <li className="nav-item">Cart</li>
             {/* <li className="nav-item">Login</li> */}
             <button 
