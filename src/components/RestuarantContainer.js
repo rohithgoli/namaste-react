@@ -1,13 +1,16 @@
 import RestuarantCard from "./RestuarantCard";
 import restuarantCardData from "../utils/mockData";
-import {useState} from 'react';
+import Shimmer from "./shimmer";
+import {useState, useEffect} from 'react';
 
 
-const RestuarantContainer = () => {
+const RestuarantContainer = (props) => {
+    const {listOfRestuarants, filteredListOfRestuarants, getTopRatedRestuarants, getAllRestuarants} = props;
 
-    // Local State Variable --> Super Powerful Variable
-    const [listOfRestuarants, setListOfRestuarants] = useState(restuarantCardData);
-
+    const [isShowTopRatedOnly, setIsShowTopRatedOnly] = useState(false);
+    useEffect(() => {
+        isShowTopRatedOnly ? getTopRatedRestuarants() : getAllRestuarants()
+    }, [isShowTopRatedOnly])
 
     return (
         <>
@@ -15,16 +18,27 @@ const RestuarantContainer = () => {
                 type="button"
                 className="get-top-rated-btn"
                 onClick={() => {
-                    const filteredList = listOfRestuarants.filter(restuarant => restuarant.data.avgRating >= 4)
-                    setListOfRestuarants(filteredList);
+                    setIsShowTopRatedOnly(!isShowTopRatedOnly)
                 }}
             >
-                Get Top Rated Restuarants 
-            </button>
+                {isShowTopRatedOnly? "Get All Restuarants": "Get Top Rated Restuarants"} 
+        </button>
         <div className="restuarant-container">
-            
             {
-                listOfRestuarants.map(restuarantData => <RestuarantCard key={restuarantData.data.uuid} restuarantData={restuarantData}/>)
+                filteredListOfRestuarants.length === 0 ?
+                <>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                    <Shimmer/>
+                </>
+                :
+                filteredListOfRestuarants.map(restuarantData => <RestuarantCard key={restuarantData.info.id} restuarantData={restuarantData}/>)
             }
         </div>
         </>
