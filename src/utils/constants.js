@@ -29,3 +29,5 @@ export const SOCIAL_URL_LIST = [
         id: "social-twitter-url"
     }
 ];
+
+export const MENU_API_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.2438426&lng=80.1733509&restaurantId=";
