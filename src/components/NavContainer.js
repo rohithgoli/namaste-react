@@ -1,12 +1,18 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
 
 const NavContainer = () => {
 
     const [btnName,setBtnName] = useState('Login')
 
+    const onlineStatus = useOnlineStatus();
+
     return (
         <ul className="nav-container">
+            <li>
+                Online Status: {onlineStatus ? "🟢" : "🔴"}
+            </li>
             <li>
                 <Link to="/" className="nav-item"> 
                     Home
