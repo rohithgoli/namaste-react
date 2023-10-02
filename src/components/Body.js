@@ -1,6 +1,7 @@
 import SearchContainer from "./SearchContainer";
 import RestuarantContainer from "./RestuarantContainer";
 import {useState, useEffect} from 'react';
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
 
@@ -47,6 +48,14 @@ const Body = () => {
         console.log(restaurantList)
         setListOfRestuarants(restaurantList)
         setFilteredListOfRestuarants(restaurantList)
+    }
+
+    const onlineStatus = useOnlineStatus();
+
+    if (!onlineStatus) {
+        return (
+            <h1>You are Offline ! Please check your Network connection</h1>
+        )
     }
 
     return (
