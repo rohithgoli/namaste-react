@@ -3,7 +3,7 @@ import NavContainer from "./NavContainer";
 
 const Header = () => {
     return (
-        <div className="header-container">
+        <div className="flex justify-between px-4 items-center">
             <Logo />
             <NavContainer />
         </div>

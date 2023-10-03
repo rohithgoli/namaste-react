@@ -9,31 +9,31 @@ const NavContainer = () => {
     const onlineStatus = useOnlineStatus();
 
     return (
-        <ul className="nav-container">
-            <li>
+        <ul className="flex">
+            <li className="px-4">
                 Online Status: {onlineStatus ? "🟢" : "🔴"}
             </li>
-            <li>
+            <li className="px-4">
                 <Link to="/" className="nav-item"> 
                     Home
                 </Link>
             </li>
-            <li>
+            <li className="px-4">
                 <Link to="/about" className="nav-item">
                     About
                 </Link>
             </li>
-            <li>
+            <li className="px-4">
                 <Link to="/contact" className="nav-item">
                     Contact
                 </Link>
             </li>
-            <li>
+            <li className="px-4">
                 <Link to="/grocery" className="nav-item">
                     Grocery
                 </Link>
             </li>
-            <li className="nav-item">Cart</li>
+            <li className="px-4 nav-item">Cart</li>
             {/* <li className="nav-item">Login</li> */}
             <button 
                 className="nav-item"

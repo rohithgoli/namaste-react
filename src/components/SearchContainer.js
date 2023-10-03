@@ -3,7 +3,7 @@ const SearchContainer = (props) => {
     const {searchText, updateSearchText, displaySearchResults} = props
 
     return (
-        <div className="search-container">
+        <div className="flex-row justify-center w-full">
             <input 
                 type="search"
                 className="search-input"
